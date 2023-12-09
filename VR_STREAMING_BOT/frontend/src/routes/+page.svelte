@@ -48,7 +48,7 @@
 </main>
 
 <main>
-  <h1>Device Rotation</h1>
+  <h1>Device Motion</h1>
   <p>X: {motion.X.toFixed(2)}</p>
   <p>Y: {motion.Y.toFixed(2)}</p>
   <p>Z: {motion.Z.toFixed(2)}</p>
