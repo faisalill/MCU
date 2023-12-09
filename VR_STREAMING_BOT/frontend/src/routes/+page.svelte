@@ -28,9 +28,9 @@
 
 <main>
   <h1>Device Rotation</h1>
-  <p>Alpha (Z-axis): {rotation.alpha}</p>
-  <p>Beta (X-axis): {rotation.beta}</p>
-  <p>Gamma (Y-axis): {rotation.gamma}</p>
+  <p>Alpha (Z-axis): {rotation.alpha.toFixed(2)}</p>
+  <p>Beta (X-axis): {rotation.beta.toFixed(2)}</p>
+  <p>Gamma (Y-axis): {rotation.gamma.toFixed(2)}</p>
 </main>
 
 <style>
