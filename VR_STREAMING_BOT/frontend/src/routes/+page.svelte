@@ -4,24 +4,24 @@
   let motion = { X: 0, Y: 0, Z: 0 };
   const backenUrl = "http://localhost:3000";
   // Send  rotation and motion data to the backend every 0.1 second
-  setInterval(() => {
-    fetch(`${backenUrl}/rotation`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(rotation),
-    });
-
-    fetch(`${backenUrl}/motion`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(motion),
-    });
-  }, 100);
-
+  // setInterval(() => {
+  // fetch(`${backenUrl}/rotation`, {
+  // method: "POST",
+  // headers: {
+  // "Content-Type": "application/json",
+  // },
+  // body: JSON.stringify(rotation),
+  // });
+  //
+  // fetch(`${backenUrl}/motion`, {
+  // method: "POST",
+  // headers: {
+  // "Content-Type": "application/json",
+  // },
+  // body: JSON.stringify(motion),
+  // });
+  // }, 100);
+  //
   // Check if DeviceOrientationEvent is supported
   onMount(() => {
     if ("ondeviceorientation" in window) {
